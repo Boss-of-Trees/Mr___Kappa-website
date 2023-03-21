@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     background: black;
+    font-family: "Inter";
 }
-
+@font-face {
+    font-family: Inter;
+    src: url("assets/Inter-Regular.ttf") format("truetype");
+}
 .container{
     width: 100%;
     min-height: 100px;
@@ -120,10 +124,7 @@ nav ul li a:hover{
     .dropdown-content a{
         color: #FFFFFF;
     }
-    .about{
-        color: #AEF94E
-    }
-    .dropdown-content a:hover{
+    .dropdown-content a:hover {
         color: #a1a1a1;
     }
 }

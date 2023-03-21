@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     background: black;
+    font-family: "Inter";
 }
-
+@font-face {
+    font-family: Inter;
+    src: url("assets/Inter-Regular.ttf") format("truetype");
+}
 .container{
     width: 100%;
     min-height: 100px;
@@ -48,6 +52,9 @@ nav ul li a{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
+}
+.contact{
+    color: #AEF94E
 }
 nav ul li a:hover{
     color: #a1a1a1;
