@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mr___Kappa's homepage">
+  <meta name="keywords" content="Mr___Kappa Mr Kappa Waiter Summer">
+  <title>About Mr___Kappa</title>
+  <link rel="stylesheet" href="about-style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <img src="assets/Mr___Kappa.png" class="logo" onclick="toIndex()">
+      <script>
+        var toIndex = function () {
+          window.location.href = "index.html";
+        }
+      </script>
+      <nav>
+        <ul id="menuList">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <img src="assets/Mr___Kappa.png" class="menu-icon">
+        <div class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if(window.scrollY >= 4){
+          navbar.style.backgroundColor = "#FFFFFFFF";
+        } else {
+          navbar.style.backgroundColor = "#00000000";
+        }
+      })
+    </script>
+  </div>
+
+</body>
+</html>
